@@ -1,4 +1,4 @@
-## My school projects
+My school projects
 ======
 
 
