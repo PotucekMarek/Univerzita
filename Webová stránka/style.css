@@ -1,0 +1,146 @@
+body{
+    color: #4b4b4b;
+    font-family: "Open Sans";
+    font-size: 100%;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: 0;
+    margin: 2vw;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2{
+    margin-top: 1.5rem;
+}
+.menu {
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: hsl(308, 60%, 33%);
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu div:hover{
+    background-color: #730065;
+}
+
+.row1 {flex-basis: 20.00%;}
+.row2 {flex-basis: 20.00%;}
+.row3 {flex-basis: 20.00%;}
+.row4 {flex-basis: 20.00%;}
+.row5 {flex-basis: 20.00%;}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+.left{
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.middle{
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.right{
+    background-color: hsl(308, 60%, 33%, 10%);
+    position: relative;
+    bottom: 1.5rem;
+    padding-left: 1rem;
+
+}
+
+.middle_top ul{
+    list-style-position: outside;
+    position: relative;
+    right: 1rem;
+}
+
+.middle_top {grid-area: top}
+.middle_bottom { grid-area: middle; }
+aside { grid-area: right; }
+
+.middle_grid{
+    display: grid;
+    grid-template-areas:
+    "top top top top top top top right right"
+    "middle middle middle middle middle middle middle right right";
+    grid-gap: 1.5rem;
+}
+
+section{
+    display: flex;
+}
+
+.bottom_left{
+    background-color: hsl(308, 60%, 33%, 10%);
+    padding: 1vw;
+}
+
+.bottom_right{
+    padding: 1vw;
+}
+
+footer{
+    margin-top: 1.5rem;
+}
+
+.footer_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: hsl(308, 60%, 33%);
+    color: #ffffff;
+}
+
+footer ul{
+    list-style-position: outside;
+    position: relative;
+    right: 1rem;
+}
+
+@media (min-width: 75em) {
+
+}
+
+@media (max-width: 75em) {
+    
+}
+
+@media (max-width: 57em) {
+    .row1 {flex-basis: 33.33%;}
+    .row2 {flex-basis: 33.33%;}
+    .row3 {flex-basis: 33.33%;}
+    .row4 {flex-basis: 33.33%;}
+    .row5 {flex-basis: 33.33%;}
+    .middle_grid{display: block;}
+}
+
+@media (max-width: 50em) {
+    .menu {flex-direction: column;}
+    .grid{grid-template-columns: none;}
+    section{display: block;}
+    .footer_grid{grid-template-columns: none;}
+}
