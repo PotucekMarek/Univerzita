@@ -1,0 +1,14 @@
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.exe
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.deps.json
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.runtimeconfig.json
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.runtimeconfig.dev.json
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.dll
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\bin\Debug\netcoreapp3.1\HelloWorld_Potucek.pdb
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.csproj.AssemblyReference.cache
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.AssemblyInfoInputs.cache
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.AssemblyInfo.cs
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.csproj.CoreCompileInputs.cache
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.dll
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.pdb
+C:\Users\Marek\OneDrive - Univerzita Palackého v Olomouci\C#\20210924\HelloWorld_Potucek\obj\Debug\netcoreapp3.1\HelloWorld_Potucek.genruntimeconfig.cache
