@@ -1,0 +1,13 @@
+– co je logika
+– výroky, pravdivost výroků, logické spojky, kvantifikátory
+– výroková logika, formule logiky, vyplývání
+– logické (booleovské) funkce, vyjadřování logických spojek jinými
+– normální formy
+– axiomatický systém logiky (jen nahlédneme)
+– logické paradoxy, zajímavosti z logiky a z historie logiky
+
+======
+
+
+License
+Every source code in this repository is under The BSD 3 license
