@@ -1,3 +1,5 @@
+# Diskrétní struktury
+
 – co je logika
 
 – výroky, pravdivost výroků, logické spojky, kvantifikátory
@@ -14,7 +16,13 @@
 
 – co jsou množiny, relace a funkce
 
-======
+– co jsou grafy
+
+– co je kombinatorika
+
+– proč se zabýváme nekonečnem?
+
+##
 
 
 License
