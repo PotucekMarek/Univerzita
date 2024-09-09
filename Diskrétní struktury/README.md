@@ -1,10 +1,18 @@
 – co je logika
+
 – výroky, pravdivost výroků, logické spojky, kvantifikátory
+
 – výroková logika, formule logiky, vyplývání
+
 – logické (booleovské) funkce, vyjadřování logických spojek jinými
+
 – normální formy
+
 – axiomatický systém logiky (jen nahlédneme)
+
 – logické paradoxy, zajímavosti z logiky a z historie logiky
+
+– co jsou množiny, relace a funkce
 
 ======
 
