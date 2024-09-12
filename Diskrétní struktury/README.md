@@ -12,7 +12,7 @@
 
 – axiomatický systém logiky (jen nahlédneme)
 
-– logické paradoxy, zajímavosti z logiky a z historie logiky
+– logické paradoxy, zajímavosti z logiky a historie logiky
 
 – co jsou množiny, relace a funkce
 
