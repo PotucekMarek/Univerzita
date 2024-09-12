@@ -1,0 +1,28 @@
+
+CREATE TABLE Knihy
+(
+ISBN VARCHAR(15) NOT NULL,
+nazev VARCHAR(255),
+vydavatel VARCHAR(100),
+rok_vydani SMALLINT,
+pocet_stran SMALLINT,
+cena INT,
+zanr VARCHAR(30),
+typ VARCHAR(20),
+UNIQUE (ISBN)
+);
+
+
+INSERT INTO Knihy VALUES('153','Stopaøùv prùvodce po galaxii', 'MF',1985,214,123, 'scifi', 'kniha');
+INSERT INTO Knihy VALUES('154', 'Pán prstenù - Dvì vìže', 'MF',1948,251, 248, 'fantasy', 'kniha');
+INSERT INTO Knihy VALUES('155', 'Kedrigern a hlas pro princeznu', 'MF',1996,NULL,312, 'fantasy', 'ebook');
+INSERT INTO Knihy VALUES('156', 'Hobit', 'MF',1950,410, 156, 'fantasy', 'kniha');
+INSERT INTO Knihy VALUES('157', 'Barva kouzel', 'Talpress',1989,180, 123, 'fantasy', 'kniha');
+INSERT INTO Knihy VALUES('K026', 'Stráže! Stráže! ', 'Talpress',2000,NULL,220, 'fantasy', 'ebook');
+INSERT INTO Knihy VALUES('K027', 'Lehké fantastièno', 'Talpress',1999,145, 252, 'fantasy', 'kniha');
+
+
+
+
+
+

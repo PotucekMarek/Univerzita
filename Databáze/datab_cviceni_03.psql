@@ -1,0 +1,49 @@
+CREATE TABLE Osoby
+(
+osCislo VARCHAR(7) NOT NULL,
+jmeno VARCHAR(20),
+prijmeni VARCHAR(30) ,
+stav VARCHAR(20),
+obor VARCHAR(30),
+rocnik SMALLINT ,
+email VARCHAR(50),
+pohlavi VARCHAR(4) ,
+datum_zahajeni_studia DATE,
+datum_ukonceni_studia DATE,
+kredity SMALLINT,
+UNIQUE(osCislo)
+);
+
+
+INSERT INTO Osoby VALUES ('R1245','Jan','Novák','studuje','MATAP',2,'jan.novak06@upol.cz','muž','1.9.2017',NULL,12);
+INSERT INTO Osoby VALUES ('R1246','Anna','Válková','studuje','MMA',1,'anna.valkova01@upol.cz','žena','1.9.2018',NULL,10);
+INSERT INTO Osoby VALUES ('R1247','Pavel','Holík','nestuduje','KMI',2,'pavel.holik02@upol.cz','muž','1.9.2017','31.7.2019',34);
+INSERT INTO Osoby VALUES ('R1248','Pavel','Mareš','studuje','KMI',3,'pavel.mares02@upol.cz','muž','1.9.2016',NULL,67);
+INSERT INTO Osoby VALUES ('R1249','Hana','Holíková','studuje','KMI',1,'hana.holikova03@upol.cz','žena','1.9.2016',NULL,40);
+INSERT INTO Osoby(osCislo,jmeno,prijmeni) VALUES ('R2451','Karel','Dlabal');
+INSERT INTO Osoby(osCislo,jmeno,prijmeni) VALUES ('R2453','Jan','Kinský');
+INSERT INTO Osoby(osCislo,jmeno,prijmeni,rocnik) VALUES ('R2452','Marie','Novotná',3);
+
+
+CREATE TABLE Predmety
+(
+id INT NOT NULL,
+nazev VARCHAR(30),
+katedra VARCHAR(4),
+zkratka VARCHAR(6),
+ucitel VARCHAR(30),
+rok SMALLINT,
+kapacita SMALLINT,
+budova VARCHAR(4),
+mistnost VARCHAR(6),
+datum_od DATE,
+datum_do DATE,
+kredity SMALLINT,
+UNIQUE(id)
+);
+
+INSERT INTO Predmety VALUES(402,	'Databáze',	'KMI',	'DB',	'Jiøí Zacpal',	2018,56,	'LP',	'5006',	'12.2.2019',	'7.5.2019',5);
+INSERT INTO Predmety VALUES(543,	'Základní software',	'KMI',	'ZSW',	'Jiøí Zacpal',	2018,36,	'LP',	'5002',	'18.9.2018',	'11.12.2018',4);
+INSERT INTO Predmety VALUES(224,	'Základy práce s PC L',	'KMI',	'ZPPCL',	'Jiøí Zacpal',	2018,18,	'LP',	'5003',	'13.2.2019',	'8.5.2019',3);
+INSERT INTO Predmety VALUES(403,	'Algoritmy 1',	'KMI',	'ALG1',	'Arnošt Veèerka',	2019,25,	'LP',	'5002',	'13.2.2020',	'8.5.2020',3);
+
