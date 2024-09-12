@@ -1,0 +1,6 @@
+Projekt: Hra Snake
+Prezentace: 26.11.2021
+
+Snake bude implementovaný tak, že se bude umět pohybovat pomocí tlačítek(vlevo, vpravo, nahoru, dolů).
+Hadovi se budou náhodně objevovat myši, které po snězení, hada prodlouží a zvýší tím hráči skóre. 
+Po nárazu do zdi nebo do hadova těla hra končí.

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea",
+    "\\.idea\\.idea.Snake.dir",
+    "\\.idea\\.idea.Snake.dir\\.idea",
+    "\\bin",
+    "\\bin\\Debug"
+  ],
+  "SelectedNode": "\\bin\\Debug\\Snake.exe",
+  "PreviewInSolutionExplorer": false
+}
