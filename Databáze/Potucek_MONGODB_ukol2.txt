@@ -1,0 +1,23 @@
+db.knihy.insertMany([{ nazev:"Stopařův průvodce po galaxii", vydavatel:"MF",rok_vydani:"1985", pocet_stran:"214", cena:"120", zanr:"scifi", typ:"kniha" },
+{ nazev:"Pán prstenů - Dvě věže", vydavatel:"MF", rok_vydani:"1948", pocet_stran:"", cena:"240", zanr:"fantasy", typ:"kniha" },
+{ nazev: "Kedrigern a hlas pro princeznu", vydavatel: "MF", rok_vydani: "1996", pocet_stran: "53", cena: "53", zanr: "fantasy", typ: "kniha" }, 
+{ nazev: "Hobit", vydavatel: "MF", rok_vydani: "1950", pocet_stran: "410", cena: "178", zanr: "fantasy", typ: "kniha" },
+{ nazev:"Barva kouzel", vydavatel:"Talpress",rok_vydani:"1989", pocet_stran:"221", cena:"358", zanr:"fantasy", typ:"ebook" },
+{ nazev:"Stráže! Stráže!", vydavatel:"Talpress", rok_vydani:"2000", pocet_stran:"", cena:"214", zanr:"fantasy", typ:"ebook" },
+{ nazev:"Lehké fantastično", vydavatel:"Talpress", rok_vydani:"1999", pocet_stran:"145", cena:"450", zanr:"fantasy", typ:"ebook" }])
+
+db.knihy.updateMany({nazev:"Stopařův průvodce po galaxii"},{$set:{autor:{jmeno:"Dougles", prijmeni:"Adams", narodnost:"Velka Britanie"}}}) 
+db.knihy.updateMany({nazev:"Pán prstenů"},{$set:{autor:{jmeno:"John Ronald Reuel", prijmeni:"Tolkien", narodnost:"Velka Britanie"}}}) 
+db.knihy.updateMany({nazev:"Kedrigern a hlas pro princeznu"},{$set:{autor:{jmeno:"John", prijmeni:"Moressy", narodnost:"Velka Britanie"}}}) 
+db.knihy.updateMany({nazev:"Hobit"},{$set:{autor:{jmeno:"John Ronald Reuel", prijmeni:"Tolkien", narodnost:"Velka Britanie"}}})
+db.knihy.updateMany({nazev:"Barva kouzel"},{$set:{autor:{jmeno:"Terry", prijmeni:"Pratchett", narodnost:"Velka Britanie"}}}) 
+db.knihy.updateMany({nazev:"Stráže! Stráže!"},{$set:{autor:{jmeno:"Terry", prijmeni:"Pratchett", narodnost:"Velka Britanie"}}}) 
+db.knihy.updateMany({nazev:"Lehké fantastično"},{$set:{autor:{jmeno:"Terry", prijmeni:"Pratchett", narodnost:"Velka Britanie"}}})
+
+db.knihy.updateMany({nazev:"Stopařův průvodce po galaxii"},{$set:{ctenar:{jmeno:"Robin", prijmeni:"Haf"}}}) 
+db.knihy.updateMany({nazev:"Pán prstenů"},{$set:{ctenar:{jmeno:"Karlik", prijmeni:"Inhalace"}}}) 
+db.knihy.updateMany({nazev:"Kedrigern a hlas pro princeznu"},{$set:{ctenar:{jmeno:"Jan", prijmeni:"Nemocnice"}}}) 
+db.knihy.updateMany({nazev:"Hobit"},{$set:{ctenar:{jmeno:"Karel", prijmeni:"Phizer"}}})
+db.knihy.updateMany({nazev:"Barva kouzel"},{$set:{ctenar:{jmeno:"Karolina", prijmeni:"Ostrava"}}}) 
+db.knihy.updateMany({nazev:"Stráže! Stráže!"},{$set:{ctenar:{jmeno:"Kaja", prijmeni:"Sputnik"}}}) 
+db.knihy.updateMany({nazev:"Lehké fantastično"},{$set:{ctenar:{jmeno:"Karlos", prijmeni:"Pes"}}})
