@@ -4,7 +4,7 @@ Síťové technologie - Wi-Fi, Bluetooth, ZigBee
 
 Překlad adres (NAT)
 
-3 Protokol IPv6
+Protokol IPv6
 
 ## License
 
