@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Example</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+    <div id="root"></div>
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        
+        const SG1 = ["Jack O'neill", "Samantha Carter", "Daniel Jackson", "Teal'c"];
+
+        // komponenta
+        function TeamMembers(props) {
+        return React.createElement("ul",
+        {className: "team-members"},
+        props.map((member, i) => 
+            React.createElement("li", {key: i}, member)));
+        }
+        
+        // poznámka: key je pro React, jinak warning
+        root.render(TeamMembers(SG1));
+
+        // Alternatively, using the class component
+        class TeamMembers extends React.Component {
+        constructor(props) {
+            super(props); // mandatorni
+            this.props = props;
+        }
+
+        render() {
+            return React.createElement("ul",
+            {className: "team-members"},
+            this.props.members.map((member, i) => 
+                React.createElement("li", {key: i}, member)));
+        }
+        }
+
+        root.render(React.createElement(TeamMembers, {members: SG1}, null));
+    </script>
+    </body>
+    
+</html>

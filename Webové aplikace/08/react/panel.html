@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    .panel {
+      display: inline-flex;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .panel.shadow {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .button {
+      padding: 10px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+    .button.inverse {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const buttons = [
+      {text: "add", color: "#eee"}, 
+      {text: "edit", color: "#eee"},
+      {text: "delete", color: "#FF5733", inverse: true}
+    ];
+      
+    const buttons2 = [
+      {text: "a", color: "#34eb8f"}, 
+      {text: "b", color: "#1f8753", inverse: true},
+      {text: "c", color: "#34eb8f"},
+      {text: "d", color: "#1f8753", inverse: true},
+      {text: "e", color: "#34eb8f"}
+    ];
+      
+    const buttons3 = [
+      {text: "info", color: "#349beb", inverse: true}, 
+    ];
+      
+    function Panel({ buttons, shadow }) {
+      return (
+        <div className={`panel ${shadow ? 'shadow' : ''}`}>
+          {buttons.map((btn, index) => (
+            <button
+              key={index}
+              className={`button ${btn.inverse ? 'inverse' : ''}`}
+              style={{ backgroundColor: btn.color }}
+            >
+              {btn.text}
+            </button>
+          ))}
+        </div>
+      );
+    }
+      
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <>
+        <Panel shadow buttons={buttons} />
+        <Panel buttons={buttons} />
+        <Panel buttons={buttons2} />
+        <Panel buttons={buttons3} />
+        <Panel shadow buttons={buttons3} />
+      </>
+    );
+  </script>
+</body>
+</html>

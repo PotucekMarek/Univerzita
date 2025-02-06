@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Example with Babel</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+
+    const SG1 = ["Jack O'neill", "Samantha Carter", "Daniel Jackson", "Teal'c"];
+    const SG1new = ["Jonas Quinn", "Cameron Mitchell", "Vala Mal Doran", "Teal'c"];
+
+    function TeamMembers(props) {
+      return (
+        <ul>
+          {props.members.map((member, i) => (
+            <li key={i}>{member}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    function formatDate(date) {
+      return date.toLocaleDateString();
+    }
+
+    function Avatar(props) {
+      return (
+        <img className="avatar"
+          src={props.user.avatarUrl}
+          alt={props.user.name}
+          width="42"
+          height="42" />
+      );
+    }
+
+    function UserInfo(props) {
+      return (
+        <div className="user-info">
+          <Avatar user={props.user} />
+          <div className="user-info__name">
+            {props.user.name}
+          </div>
+        </div>
+      );
+    }
+
+    function Comment(props) {
+      return (
+        <div className="comment">
+          <UserInfo user={props.author} />
+          <time className="comment__date">
+            {formatDate(props.date)}
+          </time>		
+          <p className="comment__text">
+            {props.text}
+          </p>
+        </div>
+      );
+    }
+
+    const comment = {
+      author: {
+        name: 'Samantha Carter',
+        avatarUrl: 'http://placekitten.com/200/300'
+      },
+      date: new Date(),
+      text: 'Chevron Seven Locked!'
+    };
+
+    root.render(
+      <div>
+        <Comment
+          author={comment.author}
+          date={comment.date}
+          text={comment.text}
+        />
+        <TeamMembers members={SG1} />
+      </div>
+    );
+
+    setTimeout(() => root.render(
+      <div>
+        <Comment
+          author={comment.author}
+          date={comment.date}
+          text={comment.text}
+        />
+        <TeamMembers members={SG1new} />
+      </div>
+    ), 4000);
+  </script>
+</body>
+</html>

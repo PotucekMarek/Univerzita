@@ -1,0 +1,18 @@
+[
+    {
+        "id": 6,
+        "name": "Marek",
+        "lastName": "Pot\u016f\u010dek",
+        "email": "marek.potucek01@gmail.com",
+        "phoneNumber": "727943569",
+        "workRoom": "5.001"
+    },
+    {
+        "id": 8,
+        "name": "Ji\u0159\u00ed",
+        "lastName": "Zacpal",
+        "email": "jiri@upol.cz",
+        "phoneNumber": "123456789",
+        "workRoom": "5.071"
+    }
+]
